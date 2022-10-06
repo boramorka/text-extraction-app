@@ -1,12 +1,8 @@
-import logging
-import config
-import logging
 from aiogram import Bot, Dispatcher, executor, types
 from app import get_text
 from io import BytesIO
 from aiogram.types import ReplyKeyboardRemove, \
-    ReplyKeyboardMarkup, KeyboardButton, \
-    InlineKeyboardMarkup, InlineKeyboardButton
+    ReplyKeyboardMarkup, KeyboardButton
 
 
 bot = Bot(token="5622629163:AAGmvqrKH0tCnUn4Uv83kOp1IMsUqJJunWE")
