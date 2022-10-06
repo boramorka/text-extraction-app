@@ -1,5 +1,4 @@
 aiogram
-io
 PIL
 pytesseract
 glob
