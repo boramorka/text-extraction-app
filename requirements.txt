@@ -1,0 +1,6 @@
+aiogram
+io
+PIL
+pytesseract
+glob
+os
