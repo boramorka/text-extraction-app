@@ -17,25 +17,25 @@ async def cmd_start(message: types.Message):
         KeyboardButton(text="EN+RU")]
     ]
     keyboard = ReplyKeyboardMarkup(keyboard=kb, resize_keyboard=True)
-    await message.answer("Язык для распознавания текста?", reply_markup=keyboard)
+    await message.answer("What language? Язык для распознавания текста?", reply_markup=keyboard)
 
 @dp.message_handler(text="RU")
 async def with_puree(message: types.Message):
     global lang
     lang = "rus"
-    await message.reply("Выбран русский язык.", reply_markup=ReplyKeyboardRemove())
+    await message.reply("Choosed RU. Выбран русский язык.", reply_markup=ReplyKeyboardRemove())
 
 @dp.message_handler(text="EN")
 async def with_puree(message: types.Message):
     global lang
     lang = "eng"
-    await message.reply("Выбран английский язык.", reply_markup=ReplyKeyboardRemove())
+    await message.reply("Choosed EN. Выбран английский язык.", reply_markup=ReplyKeyboardRemove())
 
 @dp.message_handler(text="EN+RU")
 async def with_puree(message: types.Message):
     global lang
     lang = "eng"
-    await message.reply("Выбраны английский и русский языки. Может быть больше артефактов.", reply_markup=ReplyKeyboardRemove())
+    await message.reply("Choosed EN + RU. Could be more artefacts. Выбраны английский и русский языки. Может быть больше артефактов.", reply_markup=ReplyKeyboardRemove())
 
 @dp.message_handler()
 async def kb_answer(message: types.Message):
