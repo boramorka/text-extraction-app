@@ -1,11 +1,11 @@
 from aiogram import Bot, Dispatcher, executor, types
 from app import get_text
 from io import BytesIO
+import os
 from aiogram.types import ReplyKeyboardRemove, \
     ReplyKeyboardMarkup, KeyboardButton
 
-
-bot = Bot(token="5622629163:AAGmvqrKH0tCnUn4Uv83kOp1IMsUqJJunWE")
+bot = Bot(token=os.getenv("TEXT_EXTRACTOR_API_KEY"))
 dp = Dispatcher(bot)
 lang = "rus+eng"
 
