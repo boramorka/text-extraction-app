@@ -34,7 +34,7 @@ async def with_puree(message: types.Message):
 @dp.message_handler(text="EN+RU")
 async def with_puree(message: types.Message):
     global lang
-    lang = "eng"
+    lang = "rus+eng"
     await message.reply("Choosed EN + RU. Could be more artefacts. Выбраны английский и русский языки. Может быть больше артефактов.", reply_markup=ReplyKeyboardRemove())
 
 @dp.message_handler()
