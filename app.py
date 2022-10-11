@@ -4,17 +4,24 @@ import pytesseract
 import glob
 import os
 
+# Path to pytesseract
 pytesseract.pytesseract.tesseract_cmd = "/app/.apt/usr/bin/tesseract"
 
 def magic(image, lang):
-            print(image)
-            text = pytesseract.image_to_string(image,lang=lang)
-            return(text)
+    """
+    Getting a paths of images.
+    """
+    text = pytesseract.image_to_string(image,lang=lang)
+    return(text)
 
 def get_text(lang):
+    """
+    Getting text.
+    """
     all_text = []
     images = glob.glob('photos/*.jpg')
 
+    #Loop through all images in one message. 
     for im in images:
         image = Image.open(im)
         image.save(im[:-3] + 'png')
