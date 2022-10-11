@@ -72,9 +72,20 @@ The :old_key: key technology is a Tesseract OCR by Google that has Python API.
   # Bot class takes an API key to connect to the Telegram servers.
   bot = Bot(token=os.getenv("TEXT_EXTRACTOR_API_KEY")) #Note: API key is envioroment variable
 
-  # Dispatcher will process incoming updates: messages, edited messages, channel posts, edited channel posts, inline queries, chosen inline results, callback queries, shipping queries, pre-checkout queries.
+  """
+  Dispatcher will process incoming updates: 
+      • messages
+      • edited messages
+      • channel posts
+      • edited channel posts
+      • inline queries
+      • chosen inline results
+      • callback queries
+      • shipping queries
+      • pre-checkout queries.
+  """
   dp = Dispatcher(bot) 
-
+  
   # Decorator that takes a message and processes it.
   @dp.message_handler(text=message)
   ```
