@@ -1,17 +1,18 @@
 <h1 align="center">
   <br>
- :robot: Image Text Extraction Telegram Bot by Boramorka :robot:
+ Image Text Extraction Telegram Bot by Boramorka <br>
+ :robot:
 </h1>
 
 
-<h2 align="center">
+<h3 align="center">
   Built with
   <br>
     <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" width="100">
     <img src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white" width="100">
     <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" width="119">
     <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=green" width="100">
-</h2>
+</h3>
 
 <p align="center">
   <a href="#how-to-use">How To Use</a> •
@@ -23,8 +24,8 @@
 You may interested in this bot if you need to recognize some text from the image. It's free and quick.
 
 Supported languages:
-* English :us:
-* Russian :ru:
+* :heavy_check_mark: English 
+* :heavy_check_mark: Russian 
 
 The :old_key: key technology is we used is a Tesseract OCR by Google that has Python API.
 ![Tesseract](https://github.com/boramorka/usercontent/blob/main/gifs/Tesseract.gif?raw=true)
