@@ -27,7 +27,7 @@ Supported languages:
 * :heavy_check_mark: English 
 * :heavy_check_mark: Russian 
 
-The :old_key: key technology is we used is a Tesseract OCR by Google that has Python API.
+The :old_key: key technology is a Tesseract OCR by Google that has Python API.
 ![Tesseract](https://github.com/boramorka/usercontent/blob/main/gifs/Tesseract.gif?raw=true)
 
 ## How To Use
@@ -38,7 +38,7 @@ The :old_key: key technology is we used is a Tesseract OCR by Google that has Py
 * Make sure that your document has a white background, readable black letters and picture is not rotated. :heavy_check_mark:
 * If choosed EN+RU mode it recognises both languages at the same time. But more artifacts may arise. If your document is in one language, please select that language. :heavy_check_mark:
 
-## How To Run Locally :desktop_computer:
+## How To Run Locally
 
   ``` bash
   # Clone this repository
@@ -54,7 +54,7 @@ The :old_key: key technology is we used is a Tesseract OCR by Google that has Py
   $ python bot.py
   ```
 
-## Built process :keyboard:
+## Built process
 
 - First of all we creating an app.py file for the main app. It contains:
   ```python
