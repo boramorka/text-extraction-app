@@ -11,7 +11,7 @@ def magic(image, lang):
     """
     Getting a paths of images.
     """
-    text = pytesseract.image_to_string(image,lang=lang)
+    text = pytesseract.image_to_string(image,lang=lang, config="--oem 3 --psm 4")
     return(text)
 
 def get_text(lang):
