@@ -43,8 +43,8 @@ async def kb_answer(message: types.Message):
         await message.answer('Send a photo of text. Type /lang to choose a language. \n\
 Пришлите фото с текстом. Наберите /lang для смены распознаваемого языка \n\n')
     if (len(message.text) > 0):
-        await message.answer('Make sure that your document has a white background, readable black letters and picture is not rotated. \n\
-Пожалуйста, убедитесь что ваш документ имеет белый фон, буквы читаемы и черного цвета, а фото не перевернуто. \n\n')
+        await message.answer('Make sure that your document has a readable letters and picture is not rotated. \n\
+Пожалуйста, убедитесь что ваш документ имеет читаемые буквы, а фото не перевернуто. \n\n')
     if lang == "rus+eng":
         await message.answer('Choosed EN+RU. If your document is in one language, please select it. Then you will have fewer artifacts. \n\
 Выбран английский+русский. Если ваш документ на одном языке, пожалуйста выберите его. Тогда у вас будет меньше артефаков.')
